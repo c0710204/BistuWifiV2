@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1805246517DDBD6700C4431F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1805246417DDBD6700C4431F /* Foundation.framework */; };
+		1805246717DDBD6700C4431F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1805246617DDBD6700C4431F /* CoreGraphics.framework */; };
+		1805246917DDBD6700C4431F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1805246817DDBD6700C4431F /* UIKit.framework */; };
+		1805246F17DDBD6700C4431F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1805246D17DDBD6700C4431F /* InfoPlist.strings */; };
+		1805247117DDBD6700C4431F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805247017DDBD6700C4431F /* main.m */; };
+		1805247517DDBD6700C4431F /* GXAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805247417DDBD6700C4431F /* GXAppDelegate.m */; };
+		1805247817DDBD6700C4431F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1805247617DDBD6700C4431F /* Main.storyboard */; };
+		1805247B17DDBD6700C4431F /* GXMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805247A17DDBD6700C4431F /* GXMainViewController.m */; };
+		1805247E17DDBD6800C4431F /* GXFlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805247D17DDBD6800C4431F /* GXFlipsideViewController.m */; };
+		1805248017DDBD6800C4431F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1805247F17DDBD6800C4431F /* Images.xcassets */; };
+		1805248717DDBD6800C4431F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1805248617DDBD6800C4431F /* XCTest.framework */; };
+		1805248817DDBD6800C4431F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1805246417DDBD6700C4431F /* Foundation.framework */; };
+		1805248917DDBD6800C4431F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1805246817DDBD6700C4431F /* UIKit.framework */; };
+		1805249117DDBD6800C4431F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1805248F17DDBD6800C4431F /* InfoPlist.strings */; };
+		1805249317DDBD6800C4431F /* BistuWifiV2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805249217DDBD6800C4431F /* BistuWifiV2Tests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1805248A17DDBD6800C4431F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1805245917DDBD6700C4431F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1805246017DDBD6700C4431F;
+			remoteInfo = BistuWifiV2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1805246117DDBD6700C4431F /* BistuWifiV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BistuWifiV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1805246417DDBD6700C4431F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1805246617DDBD6700C4431F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1805246817DDBD6700C4431F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1805246C17DDBD6700C4431F /* BistuWifiV2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BistuWifiV2-Info.plist"; sourceTree = "<group>"; };
+		1805246E17DDBD6700C4431F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1805247017DDBD6700C4431F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1805247217DDBD6700C4431F /* BistuWifiV2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BistuWifiV2-Prefix.pch"; sourceTree = "<group>"; };
+		1805247317DDBD6700C4431F /* GXAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXAppDelegate.h; sourceTree = "<group>"; };
+		1805247417DDBD6700C4431F /* GXAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXAppDelegate.m; sourceTree = "<group>"; };
+		1805247717DDBD6700C4431F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1805247917DDBD6700C4431F /* GXMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXMainViewController.h; sourceTree = "<group>"; };
+		1805247A17DDBD6700C4431F /* GXMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXMainViewController.m; sourceTree = "<group>"; };
+		1805247C17DDBD6800C4431F /* GXFlipsideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXFlipsideViewController.h; sourceTree = "<group>"; };
+		1805247D17DDBD6800C4431F /* GXFlipsideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXFlipsideViewController.m; sourceTree = "<group>"; };
+		1805247F17DDBD6800C4431F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1805248517DDBD6800C4431F /* BistuWifiV2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BistuWifiV2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1805248617DDBD6800C4431F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		1805248E17DDBD6800C4431F /* BistuWifiV2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BistuWifiV2Tests-Info.plist"; sourceTree = "<group>"; };
+		1805249017DDBD6800C4431F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1805249217DDBD6800C4431F /* BistuWifiV2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BistuWifiV2Tests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1805245E17DDBD6700C4431F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1805246717DDBD6700C4431F /* CoreGraphics.framework in Frameworks */,
+				1805246917DDBD6700C4431F /* UIKit.framework in Frameworks */,
+				1805246517DDBD6700C4431F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1805248217DDBD6800C4431F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1805248717DDBD6800C4431F /* XCTest.framework in Frameworks */,
+				1805248917DDBD6800C4431F /* UIKit.framework in Frameworks */,
+				1805248817DDBD6800C4431F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1805245817DDBD6700C4431F = {
+			isa = PBXGroup;
+			children = (
+				1805246A17DDBD6700C4431F /* BistuWifiV2 */,
+				1805248C17DDBD6800C4431F /* BistuWifiV2Tests */,
+				1805246317DDBD6700C4431F /* Frameworks */,
+				1805246217DDBD6700C4431F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1805246217DDBD6700C4431F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1805246117DDBD6700C4431F /* BistuWifiV2.app */,
+				1805248517DDBD6800C4431F /* BistuWifiV2Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1805246317DDBD6700C4431F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1805246417DDBD6700C4431F /* Foundation.framework */,
+				1805246617DDBD6700C4431F /* CoreGraphics.framework */,
+				1805246817DDBD6700C4431F /* UIKit.framework */,
+				1805248617DDBD6800C4431F /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1805246A17DDBD6700C4431F /* BistuWifiV2 */ = {
+			isa = PBXGroup;
+			children = (
+				1805247317DDBD6700C4431F /* GXAppDelegate.h */,
+				1805247417DDBD6700C4431F /* GXAppDelegate.m */,
+				1805247617DDBD6700C4431F /* Main.storyboard */,
+				1805247917DDBD6700C4431F /* GXMainViewController.h */,
+				1805247A17DDBD6700C4431F /* GXMainViewController.m */,
+				1805247C17DDBD6800C4431F /* GXFlipsideViewController.h */,
+				1805247D17DDBD6800C4431F /* GXFlipsideViewController.m */,
+				1805247F17DDBD6800C4431F /* Images.xcassets */,
+				1805246B17DDBD6700C4431F /* Supporting Files */,
+			);
+			path = BistuWifiV2;
+			sourceTree = "<group>";
+		};
+		1805246B17DDBD6700C4431F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1805246C17DDBD6700C4431F /* BistuWifiV2-Info.plist */,
+				1805246D17DDBD6700C4431F /* InfoPlist.strings */,
+				1805247017DDBD6700C4431F /* main.m */,
+				1805247217DDBD6700C4431F /* BistuWifiV2-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1805248C17DDBD6800C4431F /* BistuWifiV2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1805249217DDBD6800C4431F /* BistuWifiV2Tests.m */,
+				1805248D17DDBD6800C4431F /* Supporting Files */,
+			);
+			path = BistuWifiV2Tests;
+			sourceTree = "<group>";
+		};
+		1805248D17DDBD6800C4431F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1805248E17DDBD6800C4431F /* BistuWifiV2Tests-Info.plist */,
+				1805248F17DDBD6800C4431F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1805246017DDBD6700C4431F /* BistuWifiV2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1805249617DDBD6800C4431F /* Build configuration list for PBXNativeTarget "BistuWifiV2" */;
+			buildPhases = (
+				1805245D17DDBD6700C4431F /* Sources */,
+				1805245E17DDBD6700C4431F /* Frameworks */,
+				1805245F17DDBD6700C4431F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BistuWifiV2;
+			productName = BistuWifiV2;
+			productReference = 1805246117DDBD6700C4431F /* BistuWifiV2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1805248417DDBD6800C4431F /* BistuWifiV2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1805249917DDBD6800C4431F /* Build configuration list for PBXNativeTarget "BistuWifiV2Tests" */;
+			buildPhases = (
+				1805248117DDBD6800C4431F /* Sources */,
+				1805248217DDBD6800C4431F /* Frameworks */,
+				1805248317DDBD6800C4431F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1805248B17DDBD6800C4431F /* PBXTargetDependency */,
+			);
+			name = BistuWifiV2Tests;
+			productName = BistuWifiV2Tests;
+			productReference = 1805248517DDBD6800C4431F /* BistuWifiV2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1805245917DDBD6700C4431F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = GX;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = thephoenixorg;
+				TargetAttributes = {
+					1805248417DDBD6800C4431F = {
+						TestTargetID = 1805246017DDBD6700C4431F;
+					};
+				};
+			};
+			buildConfigurationList = 1805245C17DDBD6700C4431F /* Build configuration list for PBXProject "BistuWifiV2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1805245817DDBD6700C4431F;
+			productRefGroup = 1805246217DDBD6700C4431F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1805246017DDBD6700C4431F /* BistuWifiV2 */,
+				1805248417DDBD6800C4431F /* BistuWifiV2Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1805245F17DDBD6700C4431F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1805248017DDBD6800C4431F /* Images.xcassets in Resources */,
+				1805246F17DDBD6700C4431F /* InfoPlist.strings in Resources */,
+				1805247817DDBD6700C4431F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1805248317DDBD6800C4431F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1805249117DDBD6800C4431F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1805245D17DDBD6700C4431F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1805247117DDBD6700C4431F /* main.m in Sources */,
+				1805247B17DDBD6700C4431F /* GXMainViewController.m in Sources */,
+				1805247517DDBD6700C4431F /* GXAppDelegate.m in Sources */,
+				1805247E17DDBD6800C4431F /* GXFlipsideViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1805248117DDBD6800C4431F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1805249317DDBD6800C4431F /* BistuWifiV2Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1805248B17DDBD6800C4431F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1805246017DDBD6700C4431F /* BistuWifiV2 */;
+			targetProxy = 1805248A17DDBD6800C4431F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1805246D17DDBD6700C4431F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1805246E17DDBD6700C4431F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1805247617DDBD6700C4431F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1805247717DDBD6700C4431F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1805248F17DDBD6800C4431F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1805249017DDBD6800C4431F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1805249417DDBD6800C4431F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1805249517DDBD6800C4431F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1805249717DDBD6800C4431F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BistuWifiV2/BistuWifiV2-Prefix.pch";
+				INFOPLIST_FILE = "BistuWifiV2/BistuWifiV2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1805249817DDBD6800C4431F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BistuWifiV2/BistuWifiV2-Prefix.pch";
+				INFOPLIST_FILE = "BistuWifiV2/BistuWifiV2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		1805249A17DDBD6800C4431F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BistuWifiV2.app/BistuWifiV2";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BistuWifiV2/BistuWifiV2-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BistuWifiV2Tests/BistuWifiV2Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		1805249B17DDBD6800C4431F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BistuWifiV2.app/BistuWifiV2";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BistuWifiV2/BistuWifiV2-Prefix.pch";
+				INFOPLIST_FILE = "BistuWifiV2Tests/BistuWifiV2Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1805245C17DDBD6700C4431F /* Build configuration list for PBXProject "BistuWifiV2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1805249417DDBD6800C4431F /* Debug */,
+				1805249517DDBD6800C4431F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1805249617DDBD6800C4431F /* Build configuration list for PBXNativeTarget "BistuWifiV2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1805249717DDBD6800C4431F /* Debug */,
+				1805249817DDBD6800C4431F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1805249917DDBD6800C4431F /* Build configuration list for PBXNativeTarget "BistuWifiV2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1805249A17DDBD6800C4431F /* Debug */,
+				1805249B17DDBD6800C4431F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1805245917DDBD6700C4431F /* Project object */;
+}
