@@ -1,0 +1,18 @@
+
+/* Class = "IBUIButton"; normalTitle = "登陆"; ObjectID = "Nu5-6U-g6H"; */
+"Nu5-6U-g6H.normalTitle" = "登陆";
+
+/* Class = "IBUITextField"; placeholder = "用户名"; ObjectID = "ODg-2T-hC0"; */
+"ODg-2T-hC0.placeholder" = "用户名";
+
+/* Class = "IBUINavigationItem"; title = "Title"; ObjectID = "caU-JJ-JLf"; */
+"caU-JJ-JLf.title" = "Title";
+
+/* Class = "IBUIButton"; normalTitle = "退出"; ObjectID = "j3J-23-2eN"; */
+"j3J-23-2eN.normalTitle" = "退出";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "w3O-qf-lLh"; */
+"w3O-qf-lLh.text" = "Label";
+
+/* Class = "IBUITextField"; placeholder = "密码"; ObjectID = "y3O-QE-aPh"; */
+"y3O-QE-aPh.placeholder" = "密码";

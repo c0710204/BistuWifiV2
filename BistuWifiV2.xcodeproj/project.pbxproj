@@ -22,6 +22,12 @@
 		1805248917DDBD6800C4431F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1805246817DDBD6700C4431F /* UIKit.framework */; };
 		1805249117DDBD6800C4431F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1805248F17DDBD6800C4431F /* InfoPlist.strings */; };
 		1805249317DDBD6800C4431F /* BistuWifiV2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805249217DDBD6800C4431F /* BistuWifiV2Tests.m */; };
+		1805249D17DDBE5100C4431F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1805249C17DDBE5100C4431F /* SystemConfiguration.framework */; };
+		1805249F17DDBF0B00C4431F /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1805249E17DDBF0B00C4431F /* Settings.bundle */; };
+		180524A417DDC48D00C4431F /* GXWIfiNetTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 180524A317DDC48C00C4431F /* GXWIfiNetTools.m */; };
+		180524A717DDC56600C4431F /* GXSettingTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 180524A617DDC56600C4431F /* GXSettingTools.m */; };
+		180524AA17DDC9D000C4431F /* GXNetHttpslink.m in Sources */ = {isa = PBXBuildFile; fileRef = 180524A917DDC9D000C4431F /* GXNetHttpslink.m */; };
+		1826D0B317E0B99E00F54DC2 /* GXBTNWifiToggler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1826D0B217E0B99E00F54DC2 /* GXBTNWifiToggler.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +62,17 @@
 		1805248E17DDBD6800C4431F /* BistuWifiV2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BistuWifiV2Tests-Info.plist"; sourceTree = "<group>"; };
 		1805249017DDBD6800C4431F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1805249217DDBD6800C4431F /* BistuWifiV2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BistuWifiV2Tests.m; sourceTree = "<group>"; };
+		1805249C17DDBE5100C4431F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		1805249E17DDBF0B00C4431F /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		180524A117DDC08100C4431F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		180524A217DDC48C00C4431F /* GXWIfiNetTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXWIfiNetTools.h; sourceTree = "<group>"; };
+		180524A317DDC48C00C4431F /* GXWIfiNetTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXWIfiNetTools.m; sourceTree = "<group>"; };
+		180524A517DDC56600C4431F /* GXSettingTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXSettingTools.h; sourceTree = "<group>"; };
+		180524A617DDC56600C4431F /* GXSettingTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXSettingTools.m; sourceTree = "<group>"; };
+		180524A817DDC9D000C4431F /* GXNetHttpslink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXNetHttpslink.h; sourceTree = "<group>"; };
+		180524A917DDC9D000C4431F /* GXNetHttpslink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXNetHttpslink.m; sourceTree = "<group>"; };
+		1826D0B117E0B99E00F54DC2 /* GXBTNWifiToggler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXBTNWifiToggler.h; sourceTree = "<group>"; };
+		1826D0B217E0B99E00F54DC2 /* GXBTNWifiToggler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXBTNWifiToggler.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1805249D17DDBE5100C4431F /* SystemConfiguration.framework in Frameworks */,
 				1805246717DDBD6700C4431F /* CoreGraphics.framework in Frameworks */,
 				1805246917DDBD6700C4431F /* UIKit.framework in Frameworks */,
 				1805246517DDBD6700C4431F /* Foundation.framework in Frameworks */,
@@ -104,6 +122,7 @@
 		1805246317DDBD6700C4431F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1805249C17DDBE5100C4431F /* SystemConfiguration.framework */,
 				1805246417DDBD6700C4431F /* Foundation.framework */,
 				1805246617DDBD6700C4431F /* CoreGraphics.framework */,
 				1805246817DDBD6700C4431F /* UIKit.framework */,
@@ -124,6 +143,15 @@
 				1805247D17DDBD6800C4431F /* GXFlipsideViewController.m */,
 				1805247F17DDBD6800C4431F /* Images.xcassets */,
 				1805246B17DDBD6700C4431F /* Supporting Files */,
+				1805249E17DDBF0B00C4431F /* Settings.bundle */,
+				180524A217DDC48C00C4431F /* GXWIfiNetTools.h */,
+				180524A317DDC48C00C4431F /* GXWIfiNetTools.m */,
+				180524A517DDC56600C4431F /* GXSettingTools.h */,
+				180524A617DDC56600C4431F /* GXSettingTools.m */,
+				180524A817DDC9D000C4431F /* GXNetHttpslink.h */,
+				180524A917DDC9D000C4431F /* GXNetHttpslink.m */,
+				1826D0B117E0B99E00F54DC2 /* GXBTNWifiToggler.h */,
+				1826D0B217E0B99E00F54DC2 /* GXBTNWifiToggler.m */,
 			);
 			path = BistuWifiV2;
 			sourceTree = "<group>";
@@ -205,6 +233,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = thephoenixorg;
 				TargetAttributes = {
+					1805246017DDBD6700C4431F = {
+						DevelopmentTeam = AJS46CAZNB;
+					};
 					1805248417DDBD6800C4431F = {
 						TestTargetID = 1805246017DDBD6700C4431F;
 					};
@@ -234,6 +265,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1805249F17DDBF0B00C4431F /* Settings.bundle in Resources */,
 				1805248017DDBD6800C4431F /* Images.xcassets in Resources */,
 				1805246F17DDBD6700C4431F /* InfoPlist.strings in Resources */,
 				1805247817DDBD6700C4431F /* Main.storyboard in Resources */,
@@ -257,8 +289,12 @@
 			files = (
 				1805247117DDBD6700C4431F /* main.m in Sources */,
 				1805247B17DDBD6700C4431F /* GXMainViewController.m in Sources */,
+				180524AA17DDC9D000C4431F /* GXNetHttpslink.m in Sources */,
+				1826D0B317E0B99E00F54DC2 /* GXBTNWifiToggler.m in Sources */,
 				1805247517DDBD6700C4431F /* GXAppDelegate.m in Sources */,
+				180524A417DDC48D00C4431F /* GXWIfiNetTools.m in Sources */,
 				1805247E17DDBD6800C4431F /* GXFlipsideViewController.m in Sources */,
+				180524A717DDC56600C4431F /* GXSettingTools.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +329,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				1805247717DDBD6700C4431F /* Base */,
+				180524A117DDC08100C4431F /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -381,10 +418,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BistuWifiV2/BistuWifiV2-Prefix.pch";
 				INFOPLIST_FILE = "BistuWifiV2/BistuWifiV2-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -394,10 +434,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BistuWifiV2/BistuWifiV2-Prefix.pch";
 				INFOPLIST_FILE = "BistuWifiV2/BistuWifiV2-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -461,6 +504,7 @@
 				1805249817DDBD6800C4431F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1805249917DDBD6800C4431F /* Build configuration list for PBXNativeTarget "BistuWifiV2Tests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +513,7 @@
 				1805249B17DDBD6800C4431F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
