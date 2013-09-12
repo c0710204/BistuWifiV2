@@ -28,6 +28,8 @@
 		180524A717DDC56600C4431F /* GXSettingTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 180524A617DDC56600C4431F /* GXSettingTools.m */; };
 		180524AA17DDC9D000C4431F /* GXNetHttpslink.m in Sources */ = {isa = PBXBuildFile; fileRef = 180524A917DDC9D000C4431F /* GXNetHttpslink.m */; };
 		1826D0B317E0B99E00F54DC2 /* GXBTNWifiToggler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1826D0B217E0B99E00F54DC2 /* GXBTNWifiToggler.m */; };
+		18E4781B17E1BE000003C1FB /* GXBTNWifiTogglerAnimat.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E4781A17E1BE000003C1FB /* GXBTNWifiTogglerAnimat.m */; };
+		18E4781E17E2030C0003C1FB /* GXLibtoolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E4781D17E2030C0003C1FB /* GXLibtoolViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,10 @@
 		180524A917DDC9D000C4431F /* GXNetHttpslink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXNetHttpslink.m; sourceTree = "<group>"; };
 		1826D0B117E0B99E00F54DC2 /* GXBTNWifiToggler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXBTNWifiToggler.h; sourceTree = "<group>"; };
 		1826D0B217E0B99E00F54DC2 /* GXBTNWifiToggler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXBTNWifiToggler.m; sourceTree = "<group>"; };
+		18E4781917E1BE000003C1FB /* GXBTNWifiTogglerAnimat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXBTNWifiTogglerAnimat.h; sourceTree = "<group>"; };
+		18E4781A17E1BE000003C1FB /* GXBTNWifiTogglerAnimat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXBTNWifiTogglerAnimat.m; sourceTree = "<group>"; };
+		18E4781C17E2030C0003C1FB /* GXLibtoolViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXLibtoolViewController.h; sourceTree = "<group>"; };
+		18E4781D17E2030C0003C1FB /* GXLibtoolViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXLibtoolViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +147,8 @@
 				1805247A17DDBD6700C4431F /* GXMainViewController.m */,
 				1805247C17DDBD6800C4431F /* GXFlipsideViewController.h */,
 				1805247D17DDBD6800C4431F /* GXFlipsideViewController.m */,
+				18E4781C17E2030C0003C1FB /* GXLibtoolViewController.h */,
+				18E4781D17E2030C0003C1FB /* GXLibtoolViewController.m */,
 				1805247F17DDBD6800C4431F /* Images.xcassets */,
 				1805246B17DDBD6700C4431F /* Supporting Files */,
 				1805249E17DDBF0B00C4431F /* Settings.bundle */,
@@ -152,6 +160,8 @@
 				180524A917DDC9D000C4431F /* GXNetHttpslink.m */,
 				1826D0B117E0B99E00F54DC2 /* GXBTNWifiToggler.h */,
 				1826D0B217E0B99E00F54DC2 /* GXBTNWifiToggler.m */,
+				18E4781917E1BE000003C1FB /* GXBTNWifiTogglerAnimat.h */,
+				18E4781A17E1BE000003C1FB /* GXBTNWifiTogglerAnimat.m */,
 			);
 			path = BistuWifiV2;
 			sourceTree = "<group>";
@@ -288,10 +298,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1805247117DDBD6700C4431F /* main.m in Sources */,
+				18E4781E17E2030C0003C1FB /* GXLibtoolViewController.m in Sources */,
 				1805247B17DDBD6700C4431F /* GXMainViewController.m in Sources */,
 				180524AA17DDC9D000C4431F /* GXNetHttpslink.m in Sources */,
 				1826D0B317E0B99E00F54DC2 /* GXBTNWifiToggler.m in Sources */,
 				1805247517DDBD6700C4431F /* GXAppDelegate.m in Sources */,
+				18E4781B17E1BE000003C1FB /* GXBTNWifiTogglerAnimat.m in Sources */,
 				180524A417DDC48D00C4431F /* GXWIfiNetTools.m in Sources */,
 				1805247E17DDBD6800C4431F /* GXFlipsideViewController.m in Sources */,
 				180524A717DDC56600C4431F /* GXSettingTools.m in Sources */,
@@ -423,6 +435,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BistuWifiV2/BistuWifiV2-Prefix.pch";
 				INFOPLIST_FILE = "BistuWifiV2/BistuWifiV2-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -439,6 +452,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BistuWifiV2/BistuWifiV2-Prefix.pch";
 				INFOPLIST_FILE = "BistuWifiV2/BistuWifiV2-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;

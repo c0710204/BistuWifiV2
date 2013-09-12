@@ -8,12 +8,16 @@
 
 #import "GXWIfiNetTools.h"
 #import <SystemConfiguration/CaptiveNetwork.h>
-
+@implementation GXWIfiInfo : NSObject
+@synthesize SSID;
+@synthesize BSSID;
+@synthesize SSIDDATA;
+@end
 @implementation GXWIfiNetTools
 
 + (id)fetchSSIDInfo
 {
-    char ssid[255];
+   // char ssid[255];
     NSArray *ifs = (id)CFBridgingRelease(CNCopySupportedInterfaces());
     NSLog(@"%s: Supported interfaces: %@", __func__, ifs);
     id info = nil;
@@ -26,9 +30,16 @@
         //[info release];
     }
     //[ifs release];
+    GXWIfiInfo *ret=nil;
     if (info!=nil)
-        strcpy(ssid, [[info objectForKey:@"SSID"]UTF8String]);
-    return info;
+    {
+        ret=[[GXWIfiInfo alloc]init];
+        ret.SSID=[info objectForKey:@"SSID"];
+        ret.BSSID=[info objectForKey:@"BSSID"];
+        ret.SSIDDATA=[[info objectForKey:@"SSIDDATA"]copy];
+    }
+    
+    return ret;
 }
 +(bool) checknetstatus
 {

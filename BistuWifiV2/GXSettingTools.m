@@ -13,11 +13,12 @@
 +(id)getSettingValueWithItem:(NSString*)item
 {
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    return [defaults objectForKey:item];
+    return [[defaults objectForKey:item]copy];
 }
 +(void)setSettingValue:(id)value WithItem:(NSString*)item
 {
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     [defaults setObject:value forKey:item];
+    [defaults synchronize];
 }
 @end

@@ -13,14 +13,16 @@
 @end
 
 @implementation GXBTNWifiToggler
+@synthesize light_start=_light_start;
+@synthesize light_end=_light_end;
 -(void)Active_Signal:(int)ID
 {
     if (ID==-1)
     {
-        for (int i=0;i<6;i++)
+        for (int i=0;i<(__BTNWifiToggler_MaxID__);i++)
             self->active_signal[i]=YES;
     }
-    else if ((ID>=0)&&(ID<6))
+    else if ((ID>=0)&&(ID<(__BTNWifiToggler_MaxID__)))
         self->active_signal[ID]=YES;
     [self setNeedsDisplay];
 }
@@ -28,35 +30,16 @@
 {
     if (ID==-1)
     {
-        for (int i=0;i<6;i++)
+        for (int i=0;i<(__BTNWifiToggler_MaxID__);i++)
             self->active_signal[i]=NO;
     }
-    else if ((ID>=0)&&(ID<6))
+    else if ((ID>=0)&&(ID<(__BTNWifiToggler_MaxID__)))
         self->active_signal[ID]=NO;
     [self setNeedsDisplay];
 }
 
 -(void)drawRect:(CGRect)rect
 {
-    for (int i=0;i<6;i++) printf("sign=\n%s\n%s\n%s\n%s\n%s\n%s\n"
-                                 ,self->active_signal[0]?"YES":"NO"
-                                 ,self->active_signal[1]?"YES":"NO"
-                                 ,self->active_signal[2]?"YES":"NO"
-                                 ,self->active_signal[3]?"YES":"NO"
-                                 ,self->active_signal[4]?"YES":"NO"
-                                 ,self->active_signal[5]?"YES":"NO"
-                                 );
-    if ((selfRECT.origin.x!=rect.origin.x)||
-        (selfRECT.origin.y!=rect.origin.y)||
-        (selfRECT.size.height!=rect.size.height)||
-        (selfRECT.size.width!=rect.size.width))
-        selfRECT=rect;
-    NSLog(@"\n******************\nrect=\nx=%f\ny=%f\nw=%f\nh=%f\n\n\n****************\n",rect.origin.x
-        ,rect.origin.y
-          ,rect.size.width,rect.size.height);
-    NSLog(@"\n******************\nSEFLrect=\nx=%f\ny=%f\nw=%f\nh=%f\n\n\n****************\n",selfRECT.origin.x
-          ,selfRECT.origin.y
-          ,selfRECT.size.width,selfRECT.size.height);
     float s=rect.size.height/85;
     CGFloat lineWidth_signal=5;
     
@@ -68,24 +51,26 @@
     UIColor* cmain = [UIColor colorWithRed: 0.5 green: 0.5 blue: 0.5 alpha: 1];
     UIColor* white = [UIColor colorWithRed: 1 green: 0.984 blue: 0.984 alpha: 1];
     UIColor* csignal = [UIColor colorWithRed: 0.679 green: 0.866 blue: 1 alpha: 1];
+    UIColor* NoColor = [UIColor colorWithRed: 1 green: 0 blue: 0 alpha: 0];
+    UIColor* clight = [UIColor colorWithRed: 0 green: 0.59 blue: 0.886 alpha: 1];
     
     //// Shadow Declarations
     UIColor* smain_inner = white;
     CGSize smain_innerOffset = CGSizeMake(s*0.1, s*(-0.1));
     CGFloat smain_innerBlurRadius = s*5;
-    
-    //// main Drawing
-    UIBezierPath* mainPath = [UIBezierPath bezierPathWithOvalInRect: CGRectMake(0.5, 0.5, s*85, s*85)];
-    [fillColor setFill];
-    [mainPath fill];
     CGFloat xrectinfo[6][4]={
-        0,0,0,0,
+        s*0.5, s*0.5, s*84.5, s*84.5,
         s*25, s*42.5, s*35, s*35,
         s*20, s*37.5, s*45, s*45,
         s*15, s*32.5, s*55, s*55,
         s*10, s*27.5, s*65, s*65,
         s*5, s*22.5, s*75, s*75
     };
+    //// main Drawing
+    UIBezierPath* mainPath = [UIBezierPath bezierPathWithOvalInRect: CGRectMake(xrectinfo[0][0],xrectinfo[0][1],xrectinfo[0][2],xrectinfo[0][3])];
+    [fillColor setFill];
+    [mainPath fill];
+
     for(int i=1;i<=5;i++)
     {
         CGRect x5Rect = CGRectMake(xrectinfo[i][0],xrectinfo[i][1],xrectinfo[i][2],xrectinfo[i][3]);
@@ -106,7 +91,11 @@
             [x5Path stroke];
         }
     }
-
+    //draw background
+    UIBezierPath* rectanglePath = [UIBezierPath bezierPathWithRect: CGRectMake(xrectinfo[0][0],xrectinfo[0][1],xrectinfo[0][2],xrectinfo[0][3])];
+    [NoColor setFill];
+    [rectanglePath fill];
+    
     if (active_signal[0])
     {
         
@@ -141,6 +130,15 @@
         }
         CGContextRestoreGState(context);
     }
+    
+    CGRect lightRect = CGRectMake(s*1, s*1, s*83.5, s*83.5);
+    UIBezierPath* lightPath = [UIBezierPath bezierPath];
+    [lightPath addArcWithCenter: CGPointMake(CGRectGetMidX(lightRect), CGRectGetMidY(lightRect)) radius: CGRectGetWidth(lightRect) / 2 startAngle: _light_start * M_PI/180 endAngle: _light_end * M_PI/180 clockwise: YES];
+    //light
+    [clight setStroke];
+    lightPath.lineWidth = s*2;
+    [lightPath stroke];
+  
 }
 
 

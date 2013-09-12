@@ -7,14 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "GXLibtoolViewController.h"
 @class GXFlipsideViewController;
 
 @protocol GXFlipsideViewControllerDelegate
 - (void)flipsideViewControllerDidFinish:(GXFlipsideViewController *)controller;
 @end
 
-@interface GXFlipsideViewController : UIViewController
+@interface GXFlipsideViewController : UIViewController<GXlibViewControllerDelegate>
 {
     NSURLConnection *con;
     NSMutableURLRequest *request;
@@ -26,7 +26,9 @@
 
 - (IBAction)done:(id)sender;
 
+
 //@property (retain, nonatomic) IBOutlet UIWebView *WVretShower;
+@property (weak, nonatomic) IBOutlet UIButton *BTNLibtool;
 @property (retain, nonatomic) IBOutlet UIButton *btnlogout;
 @property (retain, nonatomic) IBOutlet UIButton *btnlogin;
 @property (retain, nonatomic) IBOutlet UILabel *Lssid;
@@ -38,7 +40,5 @@
 - (IBAction)login;
 -(void)loginsuccess:(NSData *)recivedata;
 - (IBAction)logout;
-- (NSString*)fetchSSIDInfo;
--(bool) checknetstatus;
--(void)reloadseeting;
+-(void)reloadsetting;
 @end

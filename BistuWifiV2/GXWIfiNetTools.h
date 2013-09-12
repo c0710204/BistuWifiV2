@@ -7,10 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
-
+@interface GXWIfiInfo : NSObject
+@property (copy,readwrite)NSString* BSSID;
+@property (copy,readwrite)NSString* SSID;
+@property (retain,readwrite)id SSIDDATA;
+@end
 @interface GXWIfiNetTools : NSObject
 
-+ (NSString*)fetchSSIDInfo;
++ (GXWIfiInfo*)fetchSSIDInfo;
 +(bool) checknetstatus;
 
 @end

@@ -21,7 +21,20 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+#pragma mark - Flipside View
 
+- (void)flipsideViewControllerDidFinish:(GXLibtoolViewController *)controller
+{
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"showAlternate1"]) {
+        [[segue destinationViewController] setDelegate:self];
+    }
+}
 #pragma mark - Actions
 
 - (IBAction)done:(id)sender
@@ -41,24 +54,37 @@
 @synthesize Barstatus;
 @synthesize receiveData;
 
--(void)reloadseeting
+-(void)reloadsetting
 {
     self.Lpassword.text=[GXSettingTools getSettingValueWithItem:@"login_pass"];
     self.Lusername.text=[GXSettingTools getSettingValueWithItem:@"login_name"];
+    bool libtool =[GXSettingTools getSettingValueWithItem:@"login_islibtool"];
+    if (libtool)
+    {
+        _BTNLibtool.hidden=NO;
+        _BTNLibtool.enabled=YES;
+    }
+    
     // NSLog(@"reloaded");
 }
 
 - (void)viewDidLoad
 {
     bool autologin =[GXSettingTools getSettingValueWithItem:@"login_isautologin"];
+
+    
     lock=NO;
     [super viewDidLoad];
+    
+    //libtool open
+
+    [self reloadsetting];
 	// Do any additional setup after loading the view, typically from a nib.
-    NSString* info=[GXWIfiNetTools fetchSSIDInfo];
+    NSString* info=[GXWIfiNetTools fetchSSIDInfo].SSID;
     if (info!=nil)
     {
-        NSLog(@"%s",ssid);
-        self.Lssid.text=[NSString stringWithUTF8String: ssid];
+       // NSLog(@"%s",ssid);
+        self.Lssid.text=info;
         if ([GXWIfiNetTools checknetstatus])
         {
             self.Lstatus.text=@"已连接";
@@ -109,13 +135,13 @@
         NSString *receiveStr = [[NSString alloc]initWithData:self.receiveData encoding:NSUTF8StringEncoding];
         NSLog(receiveStr);
          */
-        [GXNetHttpslink getHttpsContentbyRequest:request onSuccess:@selector(loginsuccess) target:self];
+        [GXNetHttpslink getHttpsContentbyRequest:request onSuccess:@selector(loginsuccess:) target:self];
         self.Lstatus.text=@"连接中";
         self.Barstatus.progress=0.3;
     }
     
 }
--(void)loginsuccess
+-(void)loginsuccess:(NSData *)recivedata
 {
     
 }
